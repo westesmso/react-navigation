@@ -30,7 +30,7 @@ export default function TelaA() {
         <GameScreen
             title="The Legend of Zelda: Ocarina of Time"
             subtitle="Nintendo 64 - 1998"
-            imageUri="https://placehold.co/900x520/E7DAB7/3E341E?text=Ocarina+of+Time"
+            imageUri="https://i.imgur.com/53sav6M.jpeg"
             palette={palette}
             paragraphs={paragraphs}
             mechanics={mechanics}
