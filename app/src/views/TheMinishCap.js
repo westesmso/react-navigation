@@ -30,7 +30,8 @@ export default function TelaC() {
         <GameScreen
             title="The Legend of Zelda: The Minish Cap"
             subtitle="Game Boy Advance - 2004"
-            imageUri="https://placehold.co/900x520/CFE8B8/2E532B?text=The+Minish+Cap"
+            imageUri="https://i.pinimg.com/1200x/43/c5/5d/43c55dcdf8f6afe047a1716ea19b88aa.jpg"
+            imagePosition={{ x: 0, y: 0, scale: 1 }}
             palette={palette}
             paragraphs={paragraphs}
             mechanics={mechanics}

@@ -9,7 +9,7 @@ export default function TesteTab() {
   return (
     <NavigationIndependentTree>
       <NavigationContainer>
-        <TAB></TAB>
+        <TAB/>
       </NavigationContainer>
     </NavigationIndependentTree>
   );

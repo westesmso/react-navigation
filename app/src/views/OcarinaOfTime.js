@@ -31,6 +31,7 @@ export default function TelaA() {
             title="The Legend of Zelda: Ocarina of Time"
             subtitle="Nintendo 64 - 1998"
             imageUri="https://i.imgur.com/53sav6M.jpeg"
+            imagePosition={{ x: 0, y: 0, scale: 1 }}
             palette={palette}
             paragraphs={paragraphs}
             mechanics={mechanics}

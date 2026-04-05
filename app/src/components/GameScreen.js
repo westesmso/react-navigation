@@ -1,19 +1,33 @@
 import React from 'react';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-export default function GameScreen({ title, subtitle, palette, paragraphs, mechanics, imageUri }) {
+export default function GameScreen({ title, subtitle, palette, paragraphs, mechanics, imageUri, imagePosition }) {
+  const x = imagePosition?.x ?? 0;
+  const y = imagePosition?.y ?? 0;
+  const scale = imagePosition?.scale ?? 1;
+
   return (
     <ScrollView style={[styles.screen, { backgroundColor: palette.background }]} contentContainerStyle={styles.content}>
       <Text style={[styles.title, { color: palette.title }]}>{title}</Text>
       <Text style={[styles.subtitle, { color: palette.subtitle }]}>{subtitle}</Text>
 
       <View style={[styles.imagePlaceholder, { backgroundColor: palette.imageBg, borderColor: palette.border }]}>
-        <Image
-          source={{ uri: imageUri }}
-          style={styles.image}
-          resizeMode="cover"
-        />
-        <Text style={[styles.imageText, { color: palette.imageText }]}>Troque a URL da imagem quando quiser</Text>
+        <View style={styles.imageFrame}>
+          <Image
+            source={{ uri: imageUri }}
+            style={[
+              styles.image,
+              {
+                transform: [
+                  { translateX: x },
+                  { translateY: y },
+                  { scale },
+                ],
+              },
+            ]}
+            resizeMode="cover"
+          />
+        </View>
       </View>
 
       <View style={[styles.descriptionBox, { backgroundColor: palette.card, borderColor: palette.border }]}>
@@ -62,10 +76,14 @@ const styles = StyleSheet.create({
     padding: 10,
     gap: 10,
   },
-  image: {
+  imageFrame: {
     width: '100%',
     height: 400,
     borderRadius: 10,
+    overflow: 'hidden',
+  },
+  image: {
+    ...StyleSheet.absoluteFillObject,
   },
   imageText: {
     fontSize: 16,

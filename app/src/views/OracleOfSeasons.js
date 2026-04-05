@@ -30,7 +30,8 @@ export default function TelaF() {
     <GameScreen
       title="The Legend of Zelda: Oracle of Seasons"
       subtitle="Game Boy Color - 2001"
-      imageUri="https://placehold.co/900x520/D6EDBE/2E5A28?text=Oracle+of+Seasons"
+      imageUri="https://i.pinimg.com/1200x/cb/0e/32/cb0e323b9d5ea99075aaf63c70fd9a37.jpg"
+      imagePosition={{ x: 0, y: 0, scale: 1 }}
       palette={palette}
       paragraphs={paragraphs}
       mechanics={mechanics}

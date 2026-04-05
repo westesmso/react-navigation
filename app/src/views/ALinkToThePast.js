@@ -30,7 +30,8 @@ export default function TelaD() {
         <GameScreen
             title="The Legend of Zelda: A Link to the Past"
             subtitle="Super Nintendo - 1991"
-            imageUri="https://placehold.co/900x520/E5D3AD/5A3E1D?text=A+Link+to+the+Past"
+            imageUri="https://i.pinimg.com/originals/3b/b3/01/3bb3017264dd2da5f9ef2344bab22f1e.gif"
+            imagePosition={{ x: 0, y: 0, scale: 1 }}
             palette={palette}
             paragraphs={paragraphs}
             mechanics={mechanics}

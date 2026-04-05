@@ -30,7 +30,8 @@ export default function TelaE() {
     <GameScreen
       title="The Legend of Zelda: Oracle of Ages"
       subtitle="Game Boy Color - 2001"
-      imageUri="https://placehold.co/900x520/C5DEF6/204C76?text=Oracle+of+Ages"
+      imageUri="https://i.pinimg.com/736x/c4/3e/45/c43e4529d29a0fcea5da18ba2f65abc7.jpg"
+      imagePosition={{ x: 0, y: 0, scale: 1 }}
       palette={palette}
       paragraphs={paragraphs}
       mechanics={mechanics}

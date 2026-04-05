@@ -30,7 +30,8 @@ export default function TelaB() {
         <GameScreen
             title="The Legend of Zelda: Majora's Mask"
             subtitle="Nintendo 64 - 2000"
-            imageUri="https://placehold.co/900x520/2E2450/F4C95D?text=Majora%27s+Mask"
+            imageUri="https://i.pinimg.com/1200x/92/42/df/9242dfe719c32041f88a7000db3742bb.jpg"
+            imagePosition={{ x: 0, y: 0, scale: 1 }}
             palette={palette}
             paragraphs={paragraphs}
             mechanics={mechanics}
